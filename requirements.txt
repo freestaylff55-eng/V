@@ -1,0 +1,6 @@
+Flask
+python-dotenv
+cryptography
+requests
+# optional: flask-limiter for rate limiting
+flask-limiter

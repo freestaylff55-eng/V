@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>XMODZ Bio Portal</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="logo">XMODZ <span class="vip">Bio Portal</span></header>
+
+    <section id="step1" class="card">
+      <h2>أدخل Access Token (حسابك فقط)</h2>
+      <p class="muted">لا تشارك هذا التوكن مع أي أحد. الموقع يخزّنه مشفّراً.</p>
+      <input id="token" placeholder="ضع التوكن هنا" />
+      <input id="label" placeholder="label (مثلاً: my_main)" />
+      <button id="saveTokenBtn">حفظ التوكن</button>
+      <div id="saveResult"></div>
+    </section>
+
+    <section id="dashboard" class="card hidden">
+      <h2>لوحة التحكم</h2>
+      <p>Token ID: <span id="tokenId"></span></p>
+      <div class="profile-preview">
+        <div class="avatar">🙂</div>
+        <div>
+          <div id="displayName">اسم الحساب</div>
+          <div id="displayBio">البايو الحالي</div>
+        </div>
+      </div>
+
+      <textarea id="newBio" placeholder="اكتب البايو الجديد"></textarea>
+      <button id="updateBioBtn">تحديث البايو</button>
+      <div id="updateResult"></div>
+
+      <button id="deleteTokenBtn" class="danger small">حذف التوكن</button>
+    </section>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
